@@ -11,7 +11,7 @@ diff -burN nginx-1.28.0.orig/src/http/modules/ngx_http_upstream_hash_module.c ng
 +#endif
  
  
- typedef struct {
+typedef struct {
 @@ -248,6 +251,14 @@ ngx_http_upstream_get_hash_peer(ngx_peer_connection_t *pc, void *data)
              goto next;
          }
@@ -56,7 +56,7 @@ diff -burN nginx-1.28.0.orig/src/http/modules/ngx_http_upstream_ip_hash_module.c
 +#endif
  
  
- typedef struct {
+typedef struct {
 @@ -214,6 +217,15 @@ ngx_http_upstream_get_ip_hash_peer(ngx_peer_connection_t *pc, void *data)
              goto next;
          }
